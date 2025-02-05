@@ -26,14 +26,14 @@ dice_drawing = {
         "|/  3   \|",
         "/________\ ",
     ),
-        4: (
+    4: (
         "  / /\ \   ",
         " / /  \ \ ",
         "| /    \ |",
         "|/  4   \|",
         "/________\ ",
     ),
-        5: (
+    5: (
         "  / /\ \   ",
         " / /  \ \ ",
         "| /    \ |",
@@ -54,7 +54,7 @@ dice_drawing = {
         "|/  7   \|",
         "/________\ ",
     ),
-        8: (
+    8: (
         "  / /\ \   ",
         " / /  \ \ ",
         "| /    \ |",
@@ -68,8 +68,8 @@ def roll_dice():
     roll = input("Roll the dice? (y/n) : ")
 
     while roll.lower() == "y".lower():
-        dice1 = random.randint(1, 6)
-        dice2 = random.randint(1, 6)
+        dice1 = random.randint(1, 8)
+        dice2 = random.randint(1, 8)
 
         print("dice rolled {} and {}".format(dice1, dice2))
         print("\n".join(dice_drawing[dice1]))
