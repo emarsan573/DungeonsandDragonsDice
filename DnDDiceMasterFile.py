@@ -151,6 +151,8 @@ dice_drawing = {
     ),
 }
 
+####d10####
+
 dice_drawing = {
     1: (
         "   / /\ \ ",
@@ -203,6 +205,8 @@ dice_drawing = {
         "  \__\/__/  ",
     ),
 }
+
+####d12####
 
 dice_drawing = {
     1: (
@@ -266,6 +270,8 @@ dice_drawing = {
         "  \__\/__/  ",
     ),
 }
+
+####d20####
 
 dice_drawing = {
     1: (
