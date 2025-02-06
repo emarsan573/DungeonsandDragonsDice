@@ -105,6 +105,8 @@ def roll_dice():
             print("die rolled {}".format(dice1))
             print("\n".join(dice_drawing1[dice1]))
             rollagain = input("roll this die again? (y/n) : ")
+        else:
+            pass
 
         while roll.lower() == "d6".lower() or rollagain.lower() == "y".lower():
             dice1 = random.randint(1, 6)
