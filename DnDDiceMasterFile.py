@@ -96,7 +96,7 @@ dice_drawing2 = {
 
 
 def roll_dice():
-    roll = input("Which die would you like to roll (d4 d6)) : ")
+    roll = input("Which die would you like to roll (d4 d6) : ")
 
     while roll.lower() == "d4".lower() or rollagain1.lower() == "y".lower():
         dice1 = random.randint(1, 4)
