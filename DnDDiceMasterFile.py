@@ -99,7 +99,7 @@ def roll_dice():
     roll = input("Which die would you like to roll (d4 d6) : ")
 
     if roll.lower() == "d4".lower() or "d6".lower():
-        if roll.lower() == "d4".lower() or rollagain1.lower() == "y".lower()
+        if roll.lower() == "d4".lower() or rollagain1.lower() == "y".lower():
             dice1 = random.randint(1, 4)
 
             print("die rolled {}".format(dice1))
