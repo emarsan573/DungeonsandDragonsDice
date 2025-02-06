@@ -6,7 +6,7 @@ import random
 
 ####d4#####
 
-dice_drawing = {
+dice_drawing1 = {
     1: (
         "    /\     ",
         "   /  \    ",
@@ -37,8 +37,9 @@ dice_drawing = {
     ),
 }
 
+####d6####
 
-dice_drawing = {
+dice_drawing2 = {
     1: (
         " __________",
         "|          |",
@@ -95,17 +96,27 @@ dice_drawing = {
 
 
 def roll_dice():
-    roll = input("Roll the dice? (y/n) : ")
+    roll = input("Which die would you like to roll (d4 d6)) : ")
 
-    while roll.lower() == "y".lower():
-        dice1 = random.randint(1, 6)
+    if roll.lower() == "d4".lower():
+        dice1 = random.randint(1, 4)
+        #dice2 = random.randint(1, 6)
+
+        print("die rolled {}".format(dice1))
+        print("\n".join(dice_drawing1[dice1]))
+        #print("\n".join(dice_drawing[dice2]))
+
+        #roll = input("\nRoll again? (y/n): ")
+
+    if roll.lower() == "d6".lower():
         dice2 = random.randint(1, 6)
+        #dice2 = random.randint(1, 6)
 
-        print("dice rolled {} and {}".format(dice1, dice2))
-        print("\n".join(dice_drawing[dice1]))
-        print("\n".join(dice_drawing[dice2]))
+        print("die rolled {}".format(dice2))
+        print("\n".join(dice_drawing2[dice2]))
+        #print("\n".join(dice_drawing[dice2]))
 
-        roll = input("\nRoll again? (y/n): ")
+        #roll = input("\nRoll again? (y/n): ")
 
 
 roll_dice()
