@@ -6,7 +6,7 @@ import random
 
 ####d4#####
 
-dice_drawing = {
+dice_drawing1 = {
     1: (
         "    /\     ",
         "   /  \    ",
@@ -39,7 +39,7 @@ dice_drawing = {
 
 ####d6####
 
-dice_drawing = {
+dice_drawing2 = {
     1: (
         " __________",
         "|          |",
@@ -92,7 +92,7 @@ dice_drawing = {
 
 ####d8####
 
-dice_drawing = {
+dice_drawing3 = {
     1: (
         "  / /\ \   ",
         " / /  \ \ ",
@@ -153,7 +153,7 @@ dice_drawing = {
 
 ####d10####
 
-dice_drawing = {
+dice_drawing4 = {
     1: (
         "   / /\ \ ",
         "  /_/ 1\_\  ",
@@ -208,7 +208,7 @@ dice_drawing = {
 
 ####d12####
 
-dice_drawing = {
+dice_drawing5 = {
     1: (
         "   / /\ \ ",
         "  /_/ 1\_\  ",
@@ -273,7 +273,7 @@ dice_drawing = {
 
 ####d20####
 
-dice_drawing = {
+dice_drawing6 = {
     1: (
         "   / /\ \ ",
         "  /_/ 1\_\  ",
