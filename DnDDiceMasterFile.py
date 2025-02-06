@@ -99,19 +99,19 @@ def roll_dice():
     roll = input("Which die would you like to roll (d4 d6) : ")
 
     if roll.lower() == "d4".lower() or "d6".lower():
-        #while roll.lower() == "d4".lower() or rollagain1.lower() == "y".lower():
-            #dice1 = random.randint(1, 4)
+        while roll.lower() == "d4".lower() or rollagain.lower() == "y".lower():
+            dice1 = random.randint(1, 4)
 
-            #print("die rolled {}".format(dice1))
-            #print("\n".join(dice_drawing1[dice1]))
-            #rollagain1 = input("roll this die again? (y/n) : ")
+            print("die rolled {}".format(dice1))
+            print("\n".join(dice_drawing1[dice1]))
+            rollagain = input("roll this die again? (y/n) : ")
 
-        while roll.lower() == "d6".lower() or rollagain2.lower() == "y".lower():
+        while roll.lower() == "d6".lower() or rollagain.lower() == "y".lower():
             dice1 = random.randint(1, 6)
 
             print("die rolled {}".format(dice1))
             print("\n".join(dice_drawing2[dice1]))
-            rollagain2 = input("roll this die again? (y/n) : ")           
+            rollagain = input("roll this die again? (y/n) : ")           
 
 
 
