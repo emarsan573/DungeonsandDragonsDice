@@ -385,7 +385,7 @@ def roll_dice():
 
             print("die rolled {}".format(dice1))
             print("\n".join(dice_drawing1[dice1]))
-            #rollagain = input("roll this die again? (y/n) : ")
+            rollagain = input("roll this die again? (y/n) : ")
 
         while roll.lower() == "d6".lower() 
             dice1 = random.randint(1, 6)
