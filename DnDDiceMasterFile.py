@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # import random
 # define a function to roll the dice
 # create a dictionary that will have the drawings of the dice
