@@ -385,42 +385,42 @@ def roll_dice():
 
             print("die rolled {}".format(dice1))
             print("\n".join(dice_drawing1[dice1]))
-            rollagain = input("roll this die again? (y/n) : ")
+            #rollagain = input("roll this die again? (y/n) : ")
 
         while roll.lower() == "d6".lower() 
             dice1 = random.randint(1, 6)
 
             print("die rolled {}".format(dice1))
-            print("\n".join(dice_drawing2[dice1]))
-            rollagain = input("roll this die again? (y/n) : ")
+            #print("\n".join(dice_drawing2[dice1]))
+            #rollagain = input("roll this die again? (y/n) : ")
 
         while roll.lower() == "d8".lower() 
             dice1 = random.randint(1, 8)
 
             print("die rolled {}".format(dice1))
-            print("\n".join(dice_drawing3[dice1]))
-            rollagain = input("roll this die again? (y/n) : ")
+            #print("\n".join(dice_drawing3[dice1]))
+            #rollagain = input("roll this die again? (y/n) : ")
 
         while roll.lower() == "d10".lower() 
             dice1 = random.randint(1, 10)
 
             print("die rolled {}".format(dice1))
-            print("\n".join(dice_drawing4[dice1]))
-            rollagain = input("roll this die again? (y/n) : ")
+            #print("\n".join(dice_drawing4[dice1]))
+            #rollagain = input("roll this die again? (y/n) : ")
 
         while roll.lower() == "d12".lower() 
             dice1 = random.randint(1, 12)
 
             print("die rolled {}".format(dice1))
-            print("\n".join(dice_drawing5[dice1]))
-            rollagain = input("roll this die again? (y/n) : ")
+            #print("\n".join(dice_drawing5[dice1]))
+            #rollagain = input("roll this die again? (y/n) : ")
 
         while roll.lower() == "d20".lower() 
             dice1 = random.randint(1, 20)
 
             print("die rolled {}".format(dice1))
-            print("\n".join(dice_drawing6[dice1]))
-            rollagain = input("roll this die again? (y/n) : ")
+            #print("\n".join(dice_drawing6[dice1]))
+            #rollagain = input("roll this die again? (y/n) : ")
 
 
 
