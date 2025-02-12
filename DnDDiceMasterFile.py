@@ -376,54 +376,44 @@ dice_drawing6 = {
     ),
 }
 
-def roll_dice():
-    roll = input("Which die would you like to roll (d4 d6 d8 d10 d12 d20) : ")
+# Define a function to roll a die based on user input
+def roll_dice(die_type):
+    roll = die_type.lower()
 
-    if roll.lower() == "d4".lower() or "d6".lower() or "d8".lower() or "d10".lower() or "d12".lower() or "d20".lower():
-        while roll.lower() == "d4".lower() 
+    if roll in ["d4", "d6", "d8", "d10", "d12", "d20"]:
+        if roll == "d4":
             dice1 = random.randint(1, 4)
-
             print("die rolled {}".format(dice1))
-            print("\n".join(dice_drawing1[dice1]))
-            rollagain = input("roll this die again? (y/n) : ")
+            # print("\n".join(dice_drawing1[dice1]))
 
-        while roll.lower() == "d6".lower() 
+        elif roll == "d6":
             dice1 = random.randint(1, 6)
-
             print("die rolled {}".format(dice1))
-            #print("\n".join(dice_drawing2[dice1]))
-            #rollagain = input("roll this die again? (y/n) : ")
+            # print("\n".join(dice_drawing2[dice1]))
 
-        while roll.lower() == "d8".lower() 
+        elif roll == "d8":
             dice1 = random.randint(1, 8)
-
             print("die rolled {}".format(dice1))
-            #print("\n".join(dice_drawing3[dice1]))
-            #rollagain = input("roll this die again? (y/n) : ")
+            # print("\n".join(dice_drawing3[dice1]))
 
-        while roll.lower() == "d10".lower() 
+        elif roll == "d10":
             dice1 = random.randint(1, 10)
-
             print("die rolled {}".format(dice1))
-            #print("\n".join(dice_drawing4[dice1]))
-            #rollagain = input("roll this die again? (y/n) : ")
+            # print("\n".join(dice_drawing4[dice1]))
 
-        while roll.lower() == "d12".lower() 
+        elif roll == "d12":
             dice1 = random.randint(1, 12)
-
             print("die rolled {}".format(dice1))
-            #print("\n".join(dice_drawing5[dice1]))
-            #rollagain = input("roll this die again? (y/n) : ")
+            # print("\n".join(dice_drawing5[dice1]))
 
-        while roll.lower() == "d20".lower() 
+        elif roll == "d20":
             dice1 = random.randint(1, 20)
-
             print("die rolled {}".format(dice1))
-            #print("\n".join(dice_drawing6[dice1]))
-            #rollagain = input("roll this die again? (y/n) : ")
+            # print("\n".join(dice_drawing6[dice1]))
+
+
+# Example call to the function
+roll_dice("d6")
 
 
 
-
-
-roll_dice()
