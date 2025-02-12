@@ -383,37 +383,37 @@ def roll_dice(die_type):
     if roll in ["d4", "d6", "d8", "d10", "d12", "d20"]:
         if roll == "d4":
             dice1 = random.randint(1, 4)
-            print("die rolled {}".format(dice1))
-            # print("\n".join(dice_drawing1[dice1]))
+            print("d4 rolled {}".format(dice1))
+            print("\n".join(dice_drawing1[dice1]))
 
         elif roll == "d6":
             dice1 = random.randint(1, 6)
-            print("die rolled {}".format(dice1))
-            # print("\n".join(dice_drawing2[dice1]))
+            print("d6 rolled {}".format(dice1))
+            print("\n".join(dice_drawing2[dice1]))
 
         elif roll == "d8":
             dice1 = random.randint(1, 8)
-            print("die rolled {}".format(dice1))
-            # print("\n".join(dice_drawing3[dice1]))
+            print("d8 rolled {}".format(dice1))
+            print("\n".join(dice_drawing3[dice1]))
 
         elif roll == "d10":
             dice1 = random.randint(1, 10)
-            print("die rolled {}".format(dice1))
-            # print("\n".join(dice_drawing4[dice1]))
+            print("d10 rolled {}".format(dice1))
+            print("\n".join(dice_drawing4[dice1]))
 
         elif roll == "d12":
             dice1 = random.randint(1, 12)
-            print("die rolled {}".format(dice1))
-            # print("\n".join(dice_drawing5[dice1]))
+            print("d12 rolled {}".format(dice1))
+            print("\n".join(dice_drawing5[dice1]))
 
         elif roll == "d20":
             dice1 = random.randint(1, 20)
-            print("die rolled {}".format(dice1))
-            # print("\n".join(dice_drawing6[dice1]))
+            print("d20 rolled {}".format(dice1))
+            print("\n".join(dice_drawing6[dice1]))
 
 
 # Example call to the function
-roll_dice("d6")
+#roll_dice("d6")
 
 
 
