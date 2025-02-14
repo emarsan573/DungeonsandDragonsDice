@@ -1,74 +1,51 @@
 # import random
-# define a function to roll the dice
-# create a dictionary that will have the drawings of the dice
+# define a function to roll a die
+# create a dictionary that will have the drawings of the die being rolled
 
 import random
 
-####d4#####
-
-dice_drawing1 = {
+dice_drawing = {
     1: (
-
-        "   / /\ \ ",
-        "  /_/ 1\_\  ",
-        "  \__\/__/  ",
+        "    /\     ",
+        "   /  \    ",
+        "  /    \   ",
+        " /  1   \  ",
+        "/________\ ",
     ),
     2: (
-        "   / /\ \ ",
-        "  /_/ 2\_\  ",
-        "  \__\/__/  ",
+        "    /\     ",
+        "   /  \    ",
+        "  /    \   ",
+        " /  2   \  ",
+        "/________\ ",
     ),
     3: (
-        "   / /\ \ ",
-        "  /_/ 3\_\  ",
-        "  \__\/__/  ",
+        "    /\     ",
+        "   /  \    ",
+        "  /    \   ",
+        " /  3   \  ",
+        "/________\ ",
     ),
-
-
     4: (
-        "   / /\ \ ",
-        "  /_/ 4\_\  ",
-        "  \__\/__/  ",
-    ),   
-    5: (
-        "   / /\ \ ",
-        "  /_/ 5\_\  ",
-        "  \__\/__/  ",
-    ),
-    6: (
-        "   / /\ \ ",
-        "  /_/ 6\_\  ",
-        "  \__\/__/  ",
-    ),
-    7: (
-        "   / /\ \ ",
-        "  /_/ 7\_\  ",
-        "  \__\/__/  ",
-    ),
-    8: (
-        "   / /\ \ ",
-        "  /_/ 8\_\  ",
-        "  \__\/__/  ",
-    ),
-    9: (
-        "   / /\ \ ",
-        "  /_/ 9\_\  ",
-        "  \__\/__/  ",
-    ),
-    10: (
-        "   / /\ \ ",
-        "  /_/10\_\  ",
-        "  \__\/__/  ",
-
+        "    /\     ",
+        "   /  \    ",
+        "  /    \   ",
+        " /  4   \  ",
+        "/________\ ",
     ),
 }
+
 
 def roll_dice():
     roll = input("Roll the dice? (y/n) : ")
 
     while roll.lower() == "y".lower():
-        dice1 = random.randint(1, 10)
-        dice2 = random.randint(1, 10)
+        dice1 = random.randint(1, 4)
+
+        print("die rolled {}".format(dice1))
+        print("\n".join(dice_drawing[dice1]))
+
+        roll = input("\nRoll again? (y/n): ")
 
         rollagain = input("roll this die again? (y/n) : ")           
 
