@@ -4,8 +4,11 @@
 
 import random
 
-dice_drawing = {
+####d4#####
+
+dice_drawing1 = {
     1: (
+
         "   / /\ \ ",
         "  /_/ 1\_\  ",
         "  \__\/__/  ",
@@ -20,6 +23,8 @@ dice_drawing = {
         "  /_/ 3\_\  ",
         "  \__\/__/  ",
     ),
+
+
     4: (
         "   / /\ \ ",
         "  /_/ 4\_\  ",
@@ -54,6 +59,7 @@ dice_drawing = {
         "   / /\ \ ",
         "  /_/10\_\  ",
         "  \__\/__/  ",
+
     ),
 }
 
@@ -64,11 +70,10 @@ def roll_dice():
         dice1 = random.randint(1, 10)
         dice2 = random.randint(1, 10)
 
-        print("dice rolled {} and {}".format(dice1, dice2))
-        print("\n".join(dice_drawing[dice1]))
-        print("\n".join(dice_drawing[dice2]))
+        rollagain = input("roll this die again? (y/n) : ")           
 
-        roll = input("\nRoll again? (y/n): ")
+
+
 
 
 roll_dice()
