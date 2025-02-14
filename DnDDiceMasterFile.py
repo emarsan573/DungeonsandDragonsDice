@@ -47,5 +47,10 @@ def roll_dice():
 
         roll = input("\nRoll again? (y/n): ")
 
+        rollagain = input("roll this die again? (y/n) : ")           
+
+
+
+
 
 roll_dice()
