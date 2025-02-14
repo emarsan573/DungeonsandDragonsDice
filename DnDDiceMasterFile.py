@@ -8,39 +8,7 @@ import random
 
 dice_drawing1 = {
     1: (
-        "    /\     ",
-        "   /  \    ",
-        "  /    \   ",
-        " /  1   \  ",
-        "/________\ ",
-    ),
-    2: (
-        "    /\     ",
-        "   /  \    ",
-        "  /    \   ",
-        " /  2   \  ",
-        "/________\ ",
-    ),
-    3: (
-        "    /\     ",
-        "   /  \    ",
-        "  /    \   ",
-        " /  3   \  ",
-        "/________\ ",
-    ),
-        4: (
-        "    /\     ",
-        "   /  \    ",
-        "  /    \   ",
-        " /  4   \  ",
-        "/________\ ",
-    ),
-}
 
-####d6####
-
-dice_drawing2 = {
-    1: (
         "   / /\ \ ",
         "  /_/ 1\_\  ",
         "  \__\/__/  ",
@@ -55,6 +23,8 @@ dice_drawing2 = {
         "  /_/ 3\_\  ",
         "  \__\/__/  ",
     ),
+
+
     4: (
         "   / /\ \ ",
         "  /_/ 4\_\  ",
@@ -89,28 +59,18 @@ dice_drawing2 = {
         "   / /\ \ ",
         "  /_/10\_\  ",
         "  \__\/__/  ",
-    ),
-    11: (
-        "   / /\ \ ",
-        "  /_/11\_\  ",
-        "  \__\/__/  ",
-    ),
-    12: (
-        "   / /\ \ ",
-        "  /_/12\_\  ",
-        "  \__\/__/  ",
+
     ),
 }
 
-
-
+def roll_dice():
+    roll = input("Roll the dice? (y/n) : ")
 
     while roll.lower() == "y".lower():
-        dice1 = random.randint(1, 12)
-        dice2 = random.randint(1, 12)
-            print("die rolled {}".format(dice1))
-            print("\n".join(dice_drawing2[dice1]))
-            rollagain = input("roll this die again? (y/n) : ")           
+        dice1 = random.randint(1, 10)
+        dice2 = random.randint(1, 10)
+
+        rollagain = input("roll this die again? (y/n) : ")           
 
 
 
