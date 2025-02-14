@@ -1,11 +1,12 @@
 # import random
-# define a function to roll the dice
-# create a dictionary that will have the drawings of the dice
+# define a function to roll a die
+# create a dictionary that will have the drawings of the die being rolled
 
 import random
 
 dice_drawing = {
     1: (
+
         "   / /\ \ ",
         "  /_/ 1\_\  ",
         "  \__\/__/  ",
@@ -115,11 +116,16 @@ def roll_dice():
         dice1 = random.randint(1, 20)
         dice2 = random.randint(1, 20)
 
-        print("dice rolled {} and {}".format(dice1, dice2))
+
+        print("die rolled {}".format(dice1))
         print("\n".join(dice_drawing[dice1]))
-        print("\n".join(dice_drawing[dice2]))
 
         roll = input("\nRoll again? (y/n): ")
+
+        rollagain = input("roll this die again? (y/n) : ")           
+
+
+
 
 
 roll_dice()
