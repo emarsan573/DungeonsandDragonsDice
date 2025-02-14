@@ -41,52 +41,60 @@ dice_drawing1 = {
 
 dice_drawing2 = {
     1: (
-        " __________",
-        "|          |",
-        "|    1     |",
-        "|     ●    |",
-        "|          |",
-        "|__________|",
+        "  / /\ \   ",
+        " / /  \ \ ",
+        "| /    \ |",
+        "|/  1   \|",
+        "/________\ ",
     ),
     2: (
-        " __________",
-        "|          |",
-        "|       ●  |",
-        "|    2     |",
-        "|  ●       |",
-        "|__________|",
+        "  / /\ \   ",
+        " / /  \ \ ",
+        "| /    \ |",
+        "|/  2   \|",
+        "/________\ ",
     ),
     3: (
-        " __________",
-        "|          |",
-        "|   3  ●   |",
-        "|    ●     |",
-        "|  ●       |",
-        "|__________|",
+        "  / /\ \   ",
+        " / /  \ \ ",
+        "| /    \ |",
+        "|/  3   \|",
+        "/________\ ",
     ),
     4: (
-        " __________",
-        "|          |",
-        "|  ●    ●  |",
-        "|    4     |",
-        "|  ●    ●  |",
-        "|__________|",
+        "  / /\ \   ",
+        " / /  \ \ ",
+        "| /    \ |",
+        "|/  4   \|",
+        "/________\ ",
     ),
     5: (
-        " __________",
-        "|          |",
-        "|  ● 5  ●  |",
-        "|    ●     |",
-        "|  ●    ●  |",
-        "|__________|",
+        "  / /\ \   ",
+        " / /  \ \ ",
+        "| /    \ |",
+        "|/  5   \|",
+        "/________\ ",
     ),
     6: (
-        " __________",
-        "|          |",
-        "|  ●    ●  |",
-        "|  ●  6 ●  |",
-        "|  ●    ●  |",
-        "|__________|",
+        "  / /\ \   ",
+        " / /  \ \ ",
+        "| /    \ |",
+        "|/  6   \|",
+        "/________\ ",
+    ),
+    7: (
+        "  / /\ \   ",
+        " / /  \ \ ",
+        "| /    \ |",
+        "|/  7   \|",
+        "/________\ ",
+    ),
+    8: (
+        "  / /\ \   ",
+        " / /  \ \ ",
+        "| /    \ |",
+        "|/  8   \|",
+        "/________\ ",
     ),
 }
 
@@ -95,22 +103,11 @@ dice_drawing2 = {
 
 
 
-def roll_dice():
-    roll = input("Which die would you like to roll (d4 d6) : ")
 
-    if roll.lower() == "d4".lower() or "d6".lower():
-        while roll.lower() == "d4".lower() or rollagain.lower() == "y".lower():
-            dice1 = random.randint(1, 4)
-
-            print("die rolled {}".format(dice1))
-            print("\n".join(dice_drawing1[dice1]))
-            rollagain = input("roll this die again? (y/n) : ")
-        else:
-            pass
-
-        while roll.lower() == "d6".lower() or rollagain.lower() == "y".lower():
-            dice1 = random.randint(1, 6)
-
+    while roll.lower() == "y".lower():
+        dice1 = random.randint(1, 8)
+        dice2 = random.randint(1, 8)
+=======
             print("die rolled {}".format(dice1))
             print("\n".join(dice_drawing2[dice1]))
             rollagain = input("roll this die again? (y/n) : ")           
